@@ -1,0 +1,14 @@
+
+<div id ="post">
+
+<div id ="post_subject">
+<%= post.subject%> 
+<% if logged_in? %>
+<h5>posted by: <%= User.find(post.user_id).name %></h5>
+<%end%>
+</div>
+<div id ="post_body">
+<%= post.body %>
+</div>
+
+</div>

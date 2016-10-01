@@ -1,0 +1,16 @@
+<h1> new post </h1> 
+<div id="new_post">
+<%= form_for(@post) do |f| %>      
+
+      title
+      <%= f.text_field :subject, class: 'form-control', placeholder: 'i.e. blair waldorf spotted...' %>
+
+      tell us more
+       <%#= link_to "(forgot password)", new_password_reset_path %>
+      <%= f.text_area :body, :input_html => {:rows => 200}, class: 'form-control', placeholder: 'give us the full details!' %>
+
+
+      <br>
+      <%= f.submit "add post", class: "btn btn-primary" %>
+<% end %>
+</div>
